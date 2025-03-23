@@ -11,3 +11,4 @@ node_modules
 !default.env
 !**/**/test.env
 .npmrc
+lcov.info
