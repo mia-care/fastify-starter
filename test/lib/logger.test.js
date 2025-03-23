@@ -8,7 +8,9 @@ const fastify = require('fastify')
 const fastifyMia = require('../../src')
 
 async function setupFastify(schema, logLevelEnvKey) {
-  const server = fastify()
+  const server = fastify({
+    logger: { level: 'trace' },
+  })
   server.register(fastifyMia, {
     envSchema: schema,
     envSchemaOptions: {
@@ -55,7 +57,7 @@ describe('Logger', () => {
     )
   })
 
-  it('should default the log level to info if the env is not found', async() => {
+  it('should default the log level to info if the env value is invalid', async() => {
     const schema = {
       type: 'object',
       properties: {
