@@ -1,4 +1,4 @@
-# Mia Hot Start
+# Fastify Starter
 
 [![javascript style guide][standard-mia-svg]][standard-mia]
 [![NPM version][npmjs-v-svg]][npmjs-com]
