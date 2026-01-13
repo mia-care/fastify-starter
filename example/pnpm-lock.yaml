@@ -11,7 +11,7 @@ importers:
       fastify:
         specifier: ^5.0.0
         version: 5.0.0
-      fastify-starter:
+      node-hot-starter:
         specifier: file:../
         version: file:..(@fastify/env@5.0.0)(@fastify/formbody@8.0.0)(@fastify/swagger-ui@5.0.1)(@fastify/swagger@9.0.0)(axios@1.7.7)(fastify-metrics@11.0.0(fastify@5.0.0))(fastify-plugin@5.0.0)(fastify@5.0.0)(pino@9.4.0)
 
@@ -236,20 +236,6 @@ packages:
   fastify-plugin@5.0.0:
     resolution: {integrity: sha512-0725fmH/yYi8ugsjszLci+lLnGBK6cG+WSxM7edY2OXJEU7gr2JiGBoieL2h9mhTych1vFsEfXsAsGGDJ/Rd5w==}
 
-  fastify-starter@file:..:
-    resolution: {directory: .., type: directory}
-    engines: {node: '>=20'}
-    peerDependencies:
-      '@fastify/env': '>= 5.0.2'
-      '@fastify/formbody': '>= 8.0.2'
-      '@fastify/swagger': '>= 9.4.2'
-      '@fastify/swagger-ui': '>= 5.2.2'
-      axios: '>= 1.8.4'
-      fastify: '>= 5.2.1'
-      fastify-metrics: '>= 12.1.0'
-      fastify-plugin: '>= 5.0.1'
-      pino: '>= 9.6.0'
-
   fastify@5.0.0:
     resolution: {integrity: sha512-Qe4dU+zGOzg7vXjw4EvcuyIbNnMwTmcuOhlOrOJsgwzvjEZmsM/IeHulgJk+r46STjdJS/ZJbxO8N70ODXDMEQ==}
 
@@ -351,6 +337,20 @@ packages:
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
+  node-hot-starter@file:..:
+    resolution: {directory: .., type: directory}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@fastify/env': '>= 5.0.2'
+      '@fastify/formbody': '>= 8.0.2'
+      '@fastify/swagger': '>= 9.4.2'
+      '@fastify/swagger-ui': '>= 5.2.2'
+      axios: '>= 1.8.4'
+      fastify: '>= 5.2.1'
+      fastify-metrics: '>= 12.1.0'
+      fastify-plugin: '>= 5.0.1'
+      pino: '>= 9.6.0'
 
   on-exit-leak-free@2.1.2:
     resolution: {integrity: sha512-0eJJY6hXLGf1udHwfNftBqH+g73EU4B504nZeKpz1sYRKafAghwxEJunB2O7rDZkL4PGfsMVnTXZ2EjibbqcsA==}
@@ -757,19 +757,6 @@ snapshots:
 
   fastify-plugin@5.0.0: {}
 
-  fastify-starter@file:..(@fastify/env@5.0.0)(@fastify/formbody@8.0.0)(@fastify/swagger-ui@5.0.1)(@fastify/swagger@9.0.0)(axios@1.7.7)(fastify-metrics@11.0.0(fastify@5.0.0))(fastify-plugin@5.0.0)(fastify@5.0.0)(pino@9.4.0):
-    dependencies:
-      '@fastify/env': 5.0.0
-      '@fastify/formbody': 8.0.0
-      '@fastify/swagger': 9.0.0
-      '@fastify/swagger-ui': 5.0.1
-      axios: 1.7.7
-      deepmerge: 4.3.1
-      fastify: 5.0.0
-      fastify-metrics: 11.0.0(fastify@5.0.0)
-      fastify-plugin: 5.0.0
-      pino: 9.4.0
-
   fastify@5.0.0:
     dependencies:
       '@fastify/ajv-compiler': 4.0.0
@@ -883,6 +870,19 @@ snapshots:
   minipass@7.1.2: {}
 
   ms@2.1.3: {}
+
+  node-hot-starter@file:..(@fastify/env@5.0.0)(@fastify/formbody@8.0.0)(@fastify/swagger-ui@5.0.1)(@fastify/swagger@9.0.0)(axios@1.7.7)(fastify-metrics@11.0.0(fastify@5.0.0))(fastify-plugin@5.0.0)(fastify@5.0.0)(pino@9.4.0):
+    dependencies:
+      '@fastify/env': 5.0.0
+      '@fastify/formbody': 8.0.0
+      '@fastify/swagger': 9.0.0
+      '@fastify/swagger-ui': 5.0.1
+      axios: 1.7.7
+      deepmerge: 4.3.1
+      fastify: 5.0.0
+      fastify-metrics: 11.0.0(fastify@5.0.0)
+      fastify-plugin: 5.0.0
+      pino: 9.4.0
 
   on-exit-leak-free@2.1.2: {}
 

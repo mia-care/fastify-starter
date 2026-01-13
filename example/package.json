@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "fastify": "^5.0.0",
-    "fastify-starter": "file:../"
+    "node-hot-starter": "file:../"
   },
   "author": "",
   "license": "ISC"

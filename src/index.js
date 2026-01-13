@@ -2,7 +2,7 @@
 
 const fp = require('fastify-plugin')
 
-const pluginName = 'fastify-starter'
+const pluginName = 'node-hot-starter'
 
 const {
   registerEnvs,

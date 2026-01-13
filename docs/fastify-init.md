@@ -41,7 +41,7 @@ const defaultFastifyOptions = {
 }
 
 const fastify = Fastify(defaultFastifyOptions)
-await fastify.register(FastifyStarter, {
+await fastify.register(NodeHotStarter, {
   envSchema: schema,
   logLevelEnvKey: "LOG_LEVEL",
 })

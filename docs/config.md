@@ -224,7 +224,7 @@ If set to `true` it disables the hooks that prints the startup messages when the
 This is an example of configuration:
 
 ```js
-await fastify.register(fastifyStarter, {
+await fastify.register(nodeHotStarter, {
   envSchema: schema,
   envSchemaOptions: {},
   logLevelEnvKey: 'LOG_LEVEL',
