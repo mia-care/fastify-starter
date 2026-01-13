@@ -17,13 +17,13 @@ async function setupFastify({ disableSwagger = false } = {}) {
 }
 
 describe('Fastify Swagger', () => {
-  it('has correctly registered the plugin', async () => {
+  it('has correctly registered the plugin', async() => {
     const fastifyInstance = await setupFastify()
     assert.ok(fastifyInstance.hasPlugin('@fastify/swagger'), `The plugin @fastify/swagger is not registered correctly`)
     assert.ok(fastifyInstance.hasPlugin('@fastify/swagger-ui'), `The plugin @fastify/swagger-ui is not registered correctly`)
   })
 
-  it('creates correctly the swagger', async () => {
+  it('creates correctly the swagger', async() => {
     const fastifyInstance = await setupFastify()
     await fastifyInstance.ready()
     const swagger = fastifyInstance.swagger()
@@ -34,7 +34,7 @@ describe('Fastify Swagger', () => {
     )
   })
 
-  it('exposes correctly the json openapi route', async () => {
+  it('exposes correctly the json openapi route', async() => {
     const fastifyInstance = await setupFastify()
     await fastifyInstance.ready()
 
@@ -51,7 +51,7 @@ describe('Fastify Swagger', () => {
     )
   })
 
-  it('exposes correctly the UI', async () => {
+  it('exposes correctly the UI', async() => {
     const fastifyInstance = await setupFastify()
     await fastifyInstance.ready()
 
@@ -68,7 +68,7 @@ describe('Fastify Swagger', () => {
     )
   })
 
-  it('has correctly skipped the plugin if the option `disableSwagger` is true', async () => {
+  it('has correctly skipped the plugin if the option `disableSwagger` is true', async() => {
     const fastifyInstance = await setupFastify({
       disableSwagger: true,
     })
