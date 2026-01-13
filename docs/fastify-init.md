@@ -41,7 +41,7 @@ const defaultFastifyOptions = {
 }
 
 const fastify = Fastify(defaultFastifyOptions)
-await fastify.register(MiaHotStart, {
+await fastify.register(FastifyStarter, {
   envSchema: schema,
   logLevelEnvKey: "LOG_LEVEL",
 })

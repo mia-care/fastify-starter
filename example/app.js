@@ -1,7 +1,7 @@
 'use strict'
 
 const Fastify = require('fastify')
-const miaHotStart = require('mia-hot-start')
+const fastifyStarter = require('fastify-starter')
 const defaultFastifyOptions = require('./defaultFastifyOptions')
 
 const helloWorldRoute = require('./api/helloWorld')
@@ -26,7 +26,7 @@ async function setupFastify(envSchemaOptions = {}) {
 
   fastify.log.info({ MY_SECRET: 'secret' })
 
-  await fastify.register(miaHotStart, {
+  await fastify.register(fastifyStarter, {
     envSchema: schema,
     envSchemaOptions,
     logLevelEnvKey: 'LOG_LEVEL',

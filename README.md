@@ -18,7 +18,7 @@ It combines the utilities of [lc39](https://github.com/mia-platform/lc39) and [c
 To install the package you can run:
 
 ```sh
-npm install mia-hot-start
+npm install fastify-starter
 ```
 
 ### Usage
@@ -26,7 +26,7 @@ npm install mia-hot-start
 To use the plugin, simply register it after creating an instance of Fastify:
 
 ```js
-import MiaHotStart from 'mia-hot-start'
+import FastifyStarter from 'fastify-starter'
 
 const schema = {
   type: 'object',
@@ -37,7 +37,7 @@ const schema = {
 }
 
 const fastify = Fastify()
-await fastify.register(MiaHotStart, {
+await fastify.register(FastifyStarter, {
   envSchema: schema,
   logLevelEnvKey: 'LOG_LEVEL',
 })
@@ -69,11 +69,11 @@ The plugin provides you out of the box:
 
 [standard-mia-svg]: https://img.shields.io/badge/code_style-standard--mia-orange.svg
 [standard-mia]: https://github.com/mia-platform/eslint-config-mia
-[npmjs-v-svg]: https://img.shields.io/npm/v/mia-hot-start.svg?logo=npm&label=version&color=cb3837
-[npmjs-dm-svg]: https://img.shields.io/npm/dm/mia-hot-start.svg?logo=npm&color=cb3837
-[npmjs-com]: https://www.npmjs.com/package/mia-hot-start
-[coverall-svg]: https://coveralls.io/repos/github/edocrippaofficial/MiaHotStart/badge.svg
-[coverall-io]: https://coveralls.io/github/edocrippaofficial/MiaHotStart
-[ci-svg]: https://github.com/edocrippaofficial/MiaHotStart/actions/workflows/node.js.yml/badge.svg
-[codeql-svg]: https://github.com/edocrippaofficial/MiaHotStart/actions/workflows/codeql.yml/badge.svg
-[ci]: https://github.com/edocrippaofficial/MiaHotStart/actions
+[npmjs-v-svg]: https://img.shields.io/npm/v/fastify-starter.svg?logo=npm&label=version&color=cb3837
+[npmjs-dm-svg]: https://img.shields.io/npm/dm/fastify-starter.svg?logo=npm&color=cb3837
+[npmjs-com]: https://www.npmjs.com/package/fastify-starter
+[coverall-svg]: https://coveralls.io/repos/github/mia-care/fastify-starter/badge.svg
+[coverall-io]: https://coveralls.io/github/mia-care/fastify-starter
+[ci-svg]: https://github.com/mia-care/fastify-starter/actions/workflows/node.js.yml/badge.svg
+[codeql-svg]: https://github.com/mia-care/fastify-starter/actions/workflows/codeql.yml/badge.svg
+[ci]: https://github.com/mia-care/fastify-starter/actions

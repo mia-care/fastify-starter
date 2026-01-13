@@ -20,7 +20,7 @@ const schema = {
 }
 
 const fastify = Fastify()
-await fastify.register(MiaHotStart, {
+await fastify.register(FastifyStarter, {
   envSchema: schema,
   envSchemaOptions: {} //optional
 })
@@ -64,7 +64,7 @@ Suppose to have a function that creates and returns the Fastify instance:
 ```js
 async function setupFastify(envSchemaOptions = {}) {
   const fastify = Fastify()
-  await fastify.register(miaHotStart, {
+  await fastify.register(fastifyStarter, {
       envSchema: schema,
       envSchemaOptions,
   })
